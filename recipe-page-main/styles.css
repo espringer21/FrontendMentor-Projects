@@ -152,6 +152,12 @@
     margin-bottom: 12px;
     padding-left: 12px;
   }
+  .ingredients-box li::marker, .instructions-box li::marker, .prep-time-box li::marker{
+    color: var(--brown-800);
+  }
+  .nutritional-box b{
+    color: var(--brown-800);
+  }
   .ingredients-box ul{
     
     color: var(--stone-600); 
