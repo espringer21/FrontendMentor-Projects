@@ -1,0 +1,192 @@
+:root{
+    --font-family-serif : "Young Serif", serif;
+    --font-family-outfit : "Outfit", serif;
+
+    --preset-1-serif-font-sz: 2.5rem; /* 40px */
+    --preset-2-serif-font-sz: 1.75rem;  /* 28px */
+    --preset-3-outfit-font-sz: 1.25rem;  /* 20px */
+    --preset-4-outfit-font-sz: 1rem; /* 16px */
+    --preset-4-outfit-bold: 700; /* bold */
+    --preset-4-outfit-regular: 400; /* regular */
+    --preset-3-outfit-semi-bold: 600; /* semi-bold */
+    --preset-2-1-serif-regular: 400; /* regular */
+
+    --rose-800:rgb(122, 40, 78);
+    --rose-500:rgb(255, 247, 251);
+    --stone-900:rgb(49, 46, 44);
+    --stone-600:rgb(95, 86, 77);
+    --stone-150:rgb(227, 221, 215);
+    --stone-100:rgb(243, 229, 215);
+    --brown-800:rgb(133, 70, 50);
+    --white:rgb(255, 255, 255);
+  }
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: var(--white);
+  }
+  
+  .recipe-main-box{
+    padding: 0;
+
+  }
+  
+  .recipie-main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+   
+    
+  }
+ 
+  .text-main-box{
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    gap: 32px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  
+  .recipie-main-container img{
+    width: 100%;
+    height: auto;
+  }
+  .heading-main-text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+  }
+  .heading-main-text h1{
+    font-family: var(--font-family-serif );
+    font-size: var(--preset-1-serif-font-sz);
+    line-height: 100%;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: var(--stone-900);
+  }
+  .heading-main-text h5{
+    font-family: var(--font-family-outfit);
+    font-size: var(--preset-4-outfit-font-sz);
+    color: var(--stone-600);
+    font-weight: var(--preset-4-outfit-regular);
+    line-height: 150%;
+    letter-spacing: 0;
+  }
+
+  @media (min-width: 768px){
+
+    .recipe-main-box {
+      max-width: 736px; 
+      padding: 40px;
+
+    }
+    .recipie-main-container{
+      padding: 40px;
+      border-radius: 24px;
+    }
+    .recipie-main-container img{
+      border-radius: 12px;
+    }
+    body{
+      background-color: var(--stone-100);
+    }
+    .recipie-main-container{
+      background-color: white;
+    }
+  }
+  .prep-time-box{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--rose-500);
+    font-family: var(--font-family-outfit);
+  }
+  .prep-time-box h4{
+    
+    font-size: var(--preset-3-outfit-font-sz);
+    color: var(--rose-800);    
+  }
+  .prep-time-box ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--stone-600);
+    padding-left: 16px;
+  }
+  .prep-time-box ul li{
+    margin-bottom: 12px;
+    padding-left: 12px;
+  }
+  .ingredients-box, .instructions-box, .nutritional-box{
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    gap: 16px;
+    font-family: var(--font-family-serif);
+   
+  }
+  .ingredients-box, .instructions-box, .nutritional-box  h2{
+    color: var(--brown-800);
+  }
+  .instructions-box ol{
+
+    padding-left: 1rem;
+    color: var(--stone-600); 
+    font-weight: 400;
+    font-weight: var(--preset-4-outfit-regular);
+    font-family: var(--font-family-outfit);
+    font-size: var(--preset-4-outfit-font-sz);
+    
+  }
+  .instructions-box ol li{
+    margin-bottom: 12px;
+    padding-left: 12px;
+  }
+  .ingredients-box ul{
+    
+    color: var(--stone-600); 
+    font-weight: var(--preset-4-outfit-regular);
+    font-family: var(--font-family-outfit);
+    font-size: var(--preset-4-outfit-font-sz);
+    padding-left: 16px;
+    
+  }
+  .ingredients-box ul li{
+    margin-bottom: 12px;
+    padding-left: 12px;
+  }
+  .nutritional-box h3 {
+    font-weight: var(--preset-4-outfit-regular);
+    font-family: var(--font-family-outfit);
+    font-size: 1rem;
+    color: var(--stone-600);
+  }
+  .nutritional-box table{
+    width: 100%;
+    border-collapse: collapse;
+    
+    font-weight: var(--preset-4-outfit-regular);
+    font-family: var(--font-family-outfit);
+    font-size: 1rem;
+    color: var(--stone-600);
+    
+  }
+  
+  .nutritional-box tr{
+    padding-left: 32px;
+    border-bottom: 1px solid rgb(227, 221, 215);
+  }
+  .nutritional-box td{
+    padding: 12px;
+  }
+  
