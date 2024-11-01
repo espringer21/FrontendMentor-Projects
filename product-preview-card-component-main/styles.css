@@ -1,0 +1,110 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    margin: 100px 20px 0 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.img1 {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.img2{
+    display: none;
+}
+.card div {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0 0 10px 10px;
+}
+h1{
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin: 0; 
+}
+h2{
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0.5rem 0 0 0;
+}
+.desc{
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.sale-price{
+    display: flex;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
+    color: hsl(158, 36%, 37%);
+}
+.sale-price span {
+    color: black;
+    align-content: center;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: line-through;
+}
+.btn{
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 500;
+}
+.btn:hover{
+    background-color: hsl(158, 37%, 20%);
+}
+.btn img{
+    width: 1rem;
+    height: 1rem;
+}
+
+@media (min-width: 680px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        max-width: 40rem;
+        flex-direction: row;
+    }
+    .card div {
+        border-radius: 0 10px 10px 0;
+    }
+    .img2{
+        display: block;
+        width: 50%;
+        border-radius: 10px 0 0 10px ;
+    }
+    .img1{
+        display: none;
+    }
+    h1{
+        margin-bottom: 1rem;
+    }
+    h2{
+        margin-bottom: 1.5rem;
+    }
+    .desc{
+        margin-bottom: 2rem;
+    }
+    .sale-price{
+        margin-bottom: 2rem;
+    }
+
+    
+}
