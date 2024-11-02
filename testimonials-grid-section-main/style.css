@@ -19,6 +19,7 @@ body{
     margin-bottom: 2rem;
     padding: 1.3rem;
     text-align: start;
+    box-shadow: 0px 10px 20px 0px #989faa
 }
 .profile{
     flex-wrap: wrap;
