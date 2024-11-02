@@ -66,10 +66,10 @@ h2{
 }
 @media (min-width: 680px) {
     h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     h2{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .title{
         margin-top: 3rem;
